@@ -8,4 +8,4 @@ COPY .latexmkrc /.latexmkrc
 
 COPY make_diff.sh /make_diff.sh
 
-ENTRYPOINT ["make_diff.sh"]
+ENTRYPOINT ["/make_diff.sh"]
