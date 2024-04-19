@@ -1,4 +1,4 @@
-FROM aggipp/texlive:2019-full-1
+FROM texlive/texlive:latest-full
 
 COPY .latexmkrc /.latexmkrc
 
