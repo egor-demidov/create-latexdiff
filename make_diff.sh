@@ -2,4 +2,6 @@
 
 echo "Hello World"
 
+cp /.latexmkrc ~/.latexmkrc
+
 cat ~/.latexmkrc
