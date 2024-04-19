@@ -8,4 +8,6 @@ COPY .latexmkrc /.latexmkrc
 
 COPY make_diff.sh /make_diff.sh
 
+RUN apt install unzip
+
 ENTRYPOINT ["/make_diff.sh"]
