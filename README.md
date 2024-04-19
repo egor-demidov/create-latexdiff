@@ -1,6 +1,6 @@
 # Action create-latexdiff
 
-A Github action that compares your LaTeX project against an older archived version and creates a "diff" file that highlights the differences. The `latexdiff` utility is in the core of this action. LaTeX projects are compiled using `pdflatex` with `latexmk`. [Overleaf's](https://www.overleaf.com/learn/how-to/How_does_Overleaf_compile_my_project) `latexmk` global configuration is used. The archived project needs to be in a `base.zip` archive in the root of the project.
+A Github action that compares your LaTeX project against an older archived version and creates a "diff" file that highlights the differences. The `latexdiff` utility is in the core of this action. LaTeX projects are compiled using `pdflatex` with `latexmk`. [Overleaf's](https://www.overleaf.com/learn/how-to/How_does_Overleaf_compile_my_project%3F) `latexmk` global configuration is used. The archived project needs to be in a `base.zip` archive in the root of the project.
 
 ## Inputs
 
