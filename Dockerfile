@@ -1,7 +1,7 @@
 FROM ubuntu:jammy
 
-RUN sudo apt update \
-    && sudo apt -y install texlive-full
+RUN apt update \
+    && apt install texlive-full
 
 # COPY home/.latexmkrc /.latexmkrc
 
