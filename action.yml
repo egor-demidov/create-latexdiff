@@ -1,16 +1,13 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Create latexdiff'
+description: 'Create a file highlighting differences between two latex documents'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  main-file:  # name of main latex file
+    description: 'Name of main latex file'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'main.tex'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.main-file }}
