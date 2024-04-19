@@ -11,3 +11,8 @@ jobs:
         uses: egor-demidov/create-latexdiff@main
         with:
           main-file: 'main.tex'
+      - name: Upload diff file artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: workspace_artifacts
+          path: ${{ github.workspace }}
