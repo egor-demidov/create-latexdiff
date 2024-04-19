@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: egor-demidov/create-latexdiff
+        uses: egor-demidov/create-latexdiff@main
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
