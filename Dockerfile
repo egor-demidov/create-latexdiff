@@ -1,9 +1,6 @@
-FROM ubuntu:jammy
+FROM aggipp/texlive:2019-full-1
 
-RUN apt update \
-    && apt -y install texlive-full
-
-# COPY home/.latexmkrc /.latexmkrc
+COPY .latexmkrc /.latexmkrc
 
 # RUN cp /.latexmkrc $HOME/.latexmkrc
 
