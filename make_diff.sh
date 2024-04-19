@@ -16,6 +16,3 @@ latexmk -pdf -interaction=nonstopmode $1
 cd ..
 latexdiff --flatten base/$1 $1 > diff.tex
 latexmk -pdf -interaction=nonstopmode diff.tex
-
-# Move the diff file to a shared directory
-mv diff.pdf /github/workspace/diff.pdf
