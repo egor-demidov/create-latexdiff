@@ -16,3 +16,6 @@ latexmk -pdf -interaction=nonstopmode $1
 cd ..
 latexdiff --flatten base/$1 $1 > diff.tex
 latexmk -pdf -interaction=nonstopmode diff.tex
+
+rm -rf base
+rm *.bbl *.aux
